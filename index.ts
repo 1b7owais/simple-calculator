@@ -1,7 +1,7 @@
 #! /usr/bin/env node 
 import inquirer from "inquirer"
-const answer = await inquirer.prompt([{message:"Enter first number",type:"number",name:"fisrtNumber"}
-,{message:"Enter second number",type:"number",name:"secondNumber"},
+const answer = await inquirer.prompt([{message:"Enter  your first number",type:"number",name:"fisrtNumber"}
+,{message:"Enter  your second number",type:"number",name:"secondNumber"},
 {message:"select one of the operators to perform action",
 type:"list",
 name:"operator",
@@ -21,3 +21,4 @@ else if (answer.operator==="Multiplication"){
 else{
     console.log(answer.fisrtNumber/answer.secondNumber)
 }
+console.log('the end')
